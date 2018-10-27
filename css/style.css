@@ -1,10 +1,17 @@
 * {
 	padding: 0;
 	margin: 0;
-}
 
+}
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine Regular'), local('Tangerine-Regular'), url(https://fonts.gstatic.com/s/tangerine/v9/IurY6Y5j_oScZZow4VOxCZZMprNA4A.woff2) format('woff2');
+  }
 section#home , section#contact, section#about{
   height: 100vh;
+
 }
 
 section#contact {
@@ -12,8 +19,9 @@ section#contact {
 }
 
 body {
-	font-family: 'Fauna One', 'Times New Roman';
-	font-size: 20px;
+	font-family: Times;
+	font-size: 30px;
+
 }
 
 li {
@@ -35,6 +43,7 @@ hr {
   margin-right: 25%;
 }
 h1 {
+	font-family: 'Fredericka the Great';
 	color: white;
 	text-align: center;
 	margin-top: 25vh;
@@ -48,8 +57,9 @@ h1 > small {
 }
 
 h2 {
+	font-family: 'Fredericka the Great';
 	font-size: 245%;
-  margin-top: 15%;
+  	margin-top: 15%;
 }
 
 h2:after {
@@ -70,12 +80,11 @@ h6 {
 	color: #F0F0F0;
 }
 
-
 h1 .logo {
 	font-size: 230%;
-	font-family: cursive;
+	font-family: 'Fredericka the Great', cursive;
 	width: 200px;
-  margin-top: 50px;
+  	margin-top: 50px;
 	margin-left: -20px;
 }
 
@@ -97,7 +106,7 @@ h1 .logo {
 }
 
 .overlay {
-	background-color: rgba(4,14,22,.83);
+	background-color: rgba(4,14,22,.8);
 	height: 100%;
 	width: 100%;
 	padding-bottom: 80px;
@@ -111,7 +120,7 @@ h1 .logo {
 }
 
 #home nav {
-  text-align: center;
+  	text-align: center;
 	margin: auto auto auto auto ;
 	width: auto;
 	padding-top: 80px;
@@ -136,7 +145,8 @@ h1 .logo {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: black;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20px;
 	z-index: 999;
 	padding: 0;
 	transition: background-color .8s;
@@ -150,11 +160,14 @@ h1 .logo {
 
 
 #about::before{
+	background-color: 
 	height: 0px;
 	width: 0px;
+/*	
+//triangle
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
-	border-top: 30px solid #131c23;
+	border-top: 30px solid #131c23;*/
 	margin: 0 auto;
 	content: "";
 	display: block;
@@ -173,20 +186,25 @@ h1 .logo {
 #about h2::after {
 	border-bottom: 2px dashed #918D8D;
 }
-
+#about li {
+	line-height: 50px;
+	list-style-type: square;
+}
 #about .info p {
 	line-height: 270%;
   	text-align: left;
 }
 #about img {
-	margin: 0 auto;
-	width: 100%;
+	margin: 10vh 0;
+	width: 30vw;
 }
 
 
-#about .col-sm-8 {
+#about .content_CV {
   	margin-top: 10vh;
-  	width:100%;
+  	margin-left: 5vh;
+  	font-size: 25px;
+  	width:50vw;
 }
 
 #skill-set {
@@ -220,17 +238,17 @@ h1 .logo {
 }
 
 #portfolio {
-	background-color: #423a3a;
+	background-color: rgba(200,230,255,0.8);
 	padding-bottom: 80px;
 }
 
 #portfolio h2 {
-	color: #F0F0F0;
+	color: black;
 	margin-bottom: 140px;
 }
 
 #portfolio h2:after {
-	border-bottom: 2px dashed #b4b4b4;
+	border-bottom: 2px dashed black;
 }
 
 #portfolio .row {
@@ -239,17 +257,18 @@ h1 .logo {
 	padding: 0 60px;
 }
 
-#portfolio .heading {
+#portfolio .heading{
+	font-family: cursive;
 	color: #F0F0F0;
 	padding: 15px;
 	text-align: center;
 	position: absolute;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
 #portfolio .heading span {
-	color: #635757;
+	color: #005599;
 	display: block;
 	margin: 40px 0px;
 	font-size: 200%;
@@ -285,6 +304,7 @@ h1 .logo {
 .description .tools {
 	margin-top: 20px;
 	overflow: hidden;
+
 }
 
 .description .tools li {
@@ -300,9 +320,9 @@ h1 .logo {
 }
 
 #portfolio div:nth-child(odd) section {
-	background-color: #483F3F;
+	background-color: #FFF;
 	padding: 10px;
-	border: 3px solid #4D4343;
+	border: 3px solid #FFF;
 }
 
 #portfolio div:nth-child(even) section {
@@ -316,6 +336,7 @@ h1 .logo {
 }
 
 #portfolio section {
+	font-family: cursive;
 	height: 100%;
 	margin-bottom: 20px;
 }
@@ -333,7 +354,7 @@ h1 .logo {
 
 #portfolio .heading {
 	position: relative;
-	margin: 0 auto;
+	margin: 0 0;
 }
 
 #portfolio section {
@@ -356,7 +377,7 @@ h1 .logo {
 	 position: relative;
 	 top: -80px;
 	 left: -30px;
-	 color: rgba(4,14,22,.83);;
+	 color: rgba(4,14,22,.0);
 }
 
 
@@ -366,15 +387,15 @@ h1 .logo {
 
 #portfolio section:hover .overlay .heading {
 	position: absolute;
-	top: -60px;
+	top: -100px;
 	transition: top .9s;
 }
 
 
 
 
-#contact .overlay {
-	background: rgba(0,0,0,.968);
+#contact .overlay ,footer{
+	background: rgba(50,80,50,0.6);
 }
 
 #contact h2 {
@@ -414,11 +435,11 @@ h1 .logo {
  @media screen and (max-width: 2000px) {
 	
 	#about img {
-		margin: 0 auto;
-		width: auto;
 		margin-left:auto;
 		margin-right:auto;
+
 	}
+
 	#portfolio [class^="col"] section {
 		width: 80%;
 		margin-right: auto;
@@ -434,7 +455,7 @@ h1 .logo {
 
 	#portfolio img {
 		width: 100%;
-		height: auto;
+		height: 100%;
 	}
 
 	#portfolio section:hover .overlay .heading span {
@@ -445,32 +466,43 @@ h1 .logo {
 	}
 } 
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 990px) {
+	section#about{
+  		height: 100%;
+	}
 	body {
-		font-size: 18px;
+		font-size: 20px;
 		text-align: center;
 	}
-  
+
   	h2 {
     	margin-top: 80px;
   	}
-  	
+  	li {
+		list-style-type: none;
+	}
 	input {
 		text-align: center;
 	}
 
 	#about img {
-		margin: 0 auto;
-		width: 50%;
-	}
+		width : 100%;
+		margin-left:auto;
+		margin-right:auto;
 
+	}
+	#about li {
+		list-style-type: none;
+	}	
 	#about .info {
     	text-align: center;
-    	font-size: 16px;
+    	font-size: 40px;
 		flex-direction: column-reverse;
 	}
-	#about .col-sm-8 {
+
+	#about .content_CV {
   		margin-top: 10vh;
+  		margin-left: 0;
   		width:100%;
 	}
 	#skill-set .skills {
@@ -498,15 +530,14 @@ h1 .logo {
 }
 
 .icons{
-  width:30%;
+  width:32%;
   height: 75px;
-  margin-top: 10%;
+  margin-top: 20vh;
 }
 
 
 
 .footer {
-  background-color: #000;
   color: white;
   font-size: 10px;
   text-align: center;
