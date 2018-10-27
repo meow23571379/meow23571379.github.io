@@ -3,12 +3,10 @@
 	margin: 0;
 }
 
-section#home , section#contact{
+section#home , section#contact, section#about{
   height: 100vh;
 }
-section#about{
-  height: 100vh;
-}
+
 section#contact {
   border-top: 10vh;
 }
@@ -414,9 +412,7 @@ h1 .logo {
 /* Media Queries */
 
  @media screen and (max-width: 2000px) {
-	section#about{
-  		height: 100vh;
-	}
+	
 	#about img {
 		margin: 0 auto;
 		width: auto;
