@@ -2,20 +2,22 @@
 	padding: 0;
 	margin: 0;
 }
-section#home , section#about {
+@font-face {
+  font-family: Fauna One;
+  src: url(http://example.com/fonts/Gentium.woff);
+}
+section#home , section#contact{
   height: 100vh;
 }
-section#contact {
-  height: 100vh;
+section#About{
+  		height: 100vh;
 }
 section#contact {
   border-top: 10vh;
 }
-/* section#home {
-  height: 100vh;
-} */
+
 body {
-	font-family: 'Fauna One', serif;
+	font-family: 'Fauna One', 'Times New Roman';
 	font-size: 20px;
 }
 
@@ -83,12 +85,7 @@ h1 .logo {
 }
 
 /* ELEMENTS */
-.noir {
-	display: block;
-	background-color: black;
-	padding: 18px;
-	border: 3px solid white;
-}
+
 
 .vertical-list li {
 	float: left;
@@ -157,7 +154,7 @@ h1 .logo {
 }
 
 
-#about::before {
+#about::before{
 	height: 0px;
 	width: 0px;
 	border-left: 30px solid transparent;
@@ -168,48 +165,10 @@ h1 .logo {
 	display: block;
 }
 
-.social-links {
-	margin-top: 100px;
-	overflow: hidden;
-	padding: 0;
-	display: table;
-	margin: 0 auto;
-	margin-top: 90px;
-}
-
-.social-links li {
-	display: inline-table;
-	margin-right: 10px;
-}
-
-.github {
-	border-color: #999999;
-}
-
-.linkedin {
-	border-color: #0077b5;
-}
-
-
-
-.github:hover {
-	background-color: #999999;
-  color: #000;
-	transition: background-color .4s;
-}
-
-.linkedin:hover {
-	background-color: #0077b5;
-	transition: background-color .4s;
-}
-
-
-
-
 #about .info {
 	display: flex;
 	flex-direction: row;
-  margin-bottom: 5%;
+  	margin-bottom: 5%;
 }
 
 #about h2 {
@@ -222,20 +181,17 @@ h1 .logo {
 
 #about .info p {
 	line-height: 270%;
-  text-align: left;
+  	text-align: left;
+}
+#about img {
+	margin: 0 auto;
+	width: 100%;
 }
 
-#about .signature {
-	font-family: 'Brush Script MT', cursive;
-	font-size: 150%;
-	float: right;
-	color: #0d2435;
-	opacity: .9;
-}
+
 #about .col-sm-8 {
-	
-  margin-top: 10vh;
-  width:100%;
+  	margin-top: 10vh;
+  	width:100%;
 }
 
 #skill-set {
@@ -460,7 +416,16 @@ h1 .logo {
 
 /* Media Queries */
 
-/* @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 2000px) {
+	section#About{
+  		height: 100vh;
+	}
+	#about img {
+		margin: 0 auto;
+		width: auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
 	#portfolio [class^="col"] section {
 		width: 80%;
 		margin-right: auto;
@@ -485,33 +450,36 @@ h1 .logo {
 	 left: -240px;
 	 position: relative;
 	}
-} */
+} 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 570px) {
 	body {
 		font-size: 18px;
 		text-align: center;
 	}
   
-  h2 {
-    margin-top: 80px;
-  }
-
+  	h2 {
+    	margin-top: 80px;
+  	}
+  	
 	input {
 		text-align: center;
 	}
 
 	#about img {
 		margin: 0 auto;
-		width: 30%;
+		width: 50%;
 	}
 
 	#about .info {
-    text-align: center;
-    font-size: 16px;
+    	text-align: center;
+    	font-size: 16px;
 		flex-direction: column-reverse;
 	}
-
+	#about .col-sm-8 {
+  		margin-top: 10vh;
+  		width:100%;
+	}
 	#skill-set .skills {
 		margin-top: 20px;
 	}
@@ -531,109 +499,10 @@ h1 .logo {
 	#portfolio .overlay > * {
 		font-size: 200%;
 	}
-
-
-
 	#contact textarea {
 		width: 90%;
 	}
 }
-
-/* @media screen and (max-width: 570px) {
-
-	#home nav {
-		width: inherit;
-	}
-	
-	#about .signature {
-		float: none;
-	}
-
-	#portfolio h2 {
-		margin-bottom: 0;
-	}
-
-	#portfolio section img {
-		display: none;
-	}
-
-	#portfolio section {
-		width: 100%;
-	}
-
-	#portfolio .description > *  {
-		display: block;
-	}
-
-	#portfolio .description {
-		display: table-footer-group;
-	}
-
-	#portfolio .heading {
-		display: table-header-group;
-		font-size: 180%;
-		text-align: left;
-	}
-
-	#portfolio .overlay {
-		min-height: auto;
-		padding: 20px;
-	}
-
-	#portfolio .description {
-		top: 100px;
-		position: static;
-	}
-
-	#portfolio section {
-		min-height: auto;
-	}
-
-	#portfolio section:hover .overlay .heading {
-	 position: relative;
-	 top: -0px;
-	 color: white;
-	 -webkit-transition: none;
-	}
-
-	#portfolio .heading span {
-		display: none;
-	}
-} */
-
-/* @media screen and (max-width: 480px) {
-	
-	.social-links li {
-		display: block;
-		width: 100%;
-	}
-
-	.social-links {
-		width: 100%;
-	}
-
-	h1 {
-		font-size: 300%;
-	}
-
-	#about img {
-		width: 60%;
-	}
-
-	#skill-set #web-development-skills::before {
-		display: none;
-	}
-
-	#skill-set .skills {
-		width: 100%;
-		display: block;
-	}
-
-	#portfolio .overlay {
-		height: 70%;
-	}
-
-} */
 
 .icons{
   width:30%;
