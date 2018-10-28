@@ -3,12 +3,7 @@
 	margin: 0;
 
 }
-@font-face {
-  font-family: 'Tangerine';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Tangerine Regular'), local('Tangerine-Regular'), url(https://fonts.gstatic.com/s/tangerine/v9/IurY6Y5j_oScZZow4VOxCZZMprNA4A.woff2) format('woff2');
-  }
+
 section#home , section#contact, section#about{
   height: 100vh;
 
@@ -19,7 +14,7 @@ section#contact {
 }
 
 body {
-	font-family: Times;
+	font-family: 'Fredericka the Great';
 	font-size: 30px;
 
 }
@@ -73,6 +68,7 @@ h3 {
 }
 
 h4 {
+	font-family: cursive;
 	font-size: 92%;
 }
 
@@ -238,10 +234,15 @@ h1 .logo {
 }
 
 #portfolio {
+	font-family: cursive;
 	background-color: rgba(200,230,255,0.8);
 	padding-bottom: 80px;
 }
+#portfolio p{
 
+	font-family: cursive;
+
+}
 #portfolio h2 {
 	color: black;
 	margin-bottom: 140px;
@@ -258,7 +259,7 @@ h1 .logo {
 }
 
 #portfolio .heading{
-	font-family: 'Fredericka the Great', cursive;
+	font-family:  cursive;
 	color: #F0F0F0;
 	padding: 15px;
 	text-align: center;
