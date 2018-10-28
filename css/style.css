@@ -56,6 +56,7 @@ h1 > small {
 h2 {
 	font-family: 'Fredericka the Great';
 	font-size: 60px;
+	margin-top: 5%;
 }
 
 h2:after {
