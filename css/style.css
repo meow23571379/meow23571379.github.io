@@ -4,7 +4,7 @@
 
 }
 
-section#home , section#contact, section#about, section#skills{
+section#home , section#contact, section#skills{
   height: 100vh;
 
 }
@@ -585,7 +585,6 @@ h1 .logo {
 	}
 
 	#about .content_CV {
-  		margin-top: 10vh;
   		margin-left: 0;
   		width:100%;
 	}
