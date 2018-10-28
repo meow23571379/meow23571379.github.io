@@ -4,7 +4,7 @@
 
 }
 
-section#home , section#contact, section#skills{
+section#home , section#contact, section#about, section#skills{
   height: 100vh;
 
 }
@@ -55,8 +55,7 @@ h1 > small {
 
 h2 {
 	font-family: 'Fredericka the Great';
-	font-size: 245%;
-  	margin-top: 15%;
+	font-size: 60px;
 }
 
 h2:after {
